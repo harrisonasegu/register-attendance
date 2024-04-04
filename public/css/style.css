@@ -1,0 +1,125 @@
+header, footer{
+  background-color: rgb(122, 21, 21);
+}
+header .logo{
+  width: 140px;
+  height: 150px;
+  border: outset;
+  box-shadow: 0 0 10px silver;
+}
+header .schoolName{
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px rgb(213, 236, 240);
+}
+div.className{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(122, 21, 21);
+}
+
+/* TABLE REGISTER */
+/* TABLE HEAD */
+div.tableCont{
+  display: grid;
+  justify-content: center;
+  color: rgb(122, 21, 21);
+  padding: 3% 0;
+}
+tr, th, td {
+  border: 1px solid rgb(156, 156, 156);
+  border-collapse: collapse;
+}
+thead{
+  background: whitesmoke;
+}
+tr{
+  height: 50px;
+}
+thead tr:first-child{
+  font-size: 21px;
+}
+thead tr:first-child div.search-cont{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+thead tr:first-child div.search-cont input.search{
+  border: ridge;
+  text-align: center;
+  color: rgb(122, 21, 21);
+}
+/* thead tr:first-child th:nth-child(3) input{
+  color: green;
+} */
+thead tr:nth-child(2){
+  font-size: 19px;
+}
+table>thead input[type="date"]{
+  width: 140px;
+  margin: 0 auto;
+}
+
+/* TABLE BODY */
+tbody{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+tbody tr img{
+  width: 80px;
+  height: 80px;
+}
+tbody tr a.stProfile{
+  transition: all 0.8s;
+}
+tbody tr a.stProfile:hover{
+  color: rgb(122, 21, 21);
+  text-decoration: none;
+}
+
+/* TABLE FOOTER */
+tfoot{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 19px;
+}
+tfoot .totalAttendance{
+  font-size: 17px;
+}
+
+/* SESSION ATTENDANCE */
+button.sessionAttendance-btn,
+div#sessionAttendance span.input-group-text,
+input.compute-btn
+{
+  color: white;
+  background: rgb(122, 21, 21);
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+button.sessionAttendance-btn:hover,
+input.compute-btn:hover
+{
+  border: rgb(122, 21, 21);
+  background: whitesmoke;
+  color: rgb(122, 21, 21);;
+}
+div[class="computeCont"]{
+  width: 70%;
+  margin: 0 auto;
+}
+div#sessionAttendance input[type="text"]{
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+
+@media(max-width: 960px){
+  header .logo{
+    width: 100px;
+    height: 100px;
+    border: outset;
+    box-shadow: 0 0 10px silver;
+  }
+}
